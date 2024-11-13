@@ -198,9 +198,9 @@ add_action('widgets_init', function() {
     register_widget('City_Temperature_Widget');
 });
 ````
-````bash
-# template-cities.php
 
+# template-cities.php
+````bash
 <?php
 /*
 Template Name: City Table
