@@ -9,15 +9,13 @@ dev_admin
 OHJq%r6S6!m&95pRtq
 
 # functions.php
+
 <?php
 function storefront_child_enqueue_styles() {
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
     wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/style.css', ['parent-style']);
 }
 add_action('wp_enqueue_scripts', 'storefront_child_enqueue_styles');
-
-
-
 
 function register_city_post_type() {
     $args = [
@@ -169,7 +167,7 @@ class City_Temperature_Widget extends WP_Widget {
     
 
     
-    public function form($instance) {
+   public function form($instance) {
         $city_id = !empty($instance['city']) ? $instance['city'] : '';
 
         
