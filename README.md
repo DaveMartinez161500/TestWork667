@@ -1,12 +1,14 @@
 # TestWork667
 
-
+````bash
 db name
 testweb
-
+````
+````bash
 wp admin pass
 dev_admin
 OHJq%r6S6!m&95pRtq
+````
 
 # functions.php
 ````bash
