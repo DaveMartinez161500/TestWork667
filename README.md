@@ -9,7 +9,7 @@ dev_admin
 OHJq%r6S6!m&95pRtq
 
 # functions.php
-
+````bash
 <?php
 function storefront_child_enqueue_styles() {
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
@@ -195,7 +195,8 @@ class City_Temperature_Widget extends WP_Widget {
 add_action('widgets_init', function() {
     register_widget('City_Temperature_Widget');
 });
-
+````
+````bash
 # template-cities.php
 
 <?php
@@ -292,3 +293,4 @@ get_header();
 
 get_footer();
 ?>
+````
